@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="HalalMatchmaking — meaningful Muslim connections, made with intention.">
+  <title>HalalMatchmaking — meaningful, made halal</title>
+  <link rel="icon" href="assets/images/halal-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <div id="sidebarContent"></div>
+    </aside>
+    <main class="main-shell">
+      <header class="topbar">
+        <div class="topbar-leading">
+          <button class="icon-button mobile-menu-button" type="button" aria-label="Open navigation" data-action="toggle-sidebar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          </button>
+          <div class="breadcrumbs"><span class="crumb-home">HalalMatch</span><span class="crumb-divider">/</span><span id="currentCrumb">Discover</span></div>
+        </div>
+        <div class="topbar-actions">
+          <label class="global-search" aria-label="Search HalalMatch">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+            <input type="search" id="globalSearch" placeholder="Search people, posts..." autocomplete="off">
+            <span class="search-shortcut">⌘ K</span>
+          </label>
+          <button class="icon-button notification-button" type="button" aria-label="Notifications" data-action="notifications">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg>
+            <span class="notification-dot"></span>
+          </button>
+          <span class="topbar-divider"></span>
+          <button class="topbar-profile" type="button" data-action="profile" aria-label="Open your profile">
+            <img src="assets/images/portrait-aisha.jpg" alt="Fatima's profile photo" class="avatar avatar-top">
+            <span class="topbar-profile-copy"><strong>Fatima</strong><small>Verified member</small></span>
+            <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>
+          </button>
+        </div>
+      </header>
+      <div class="page-scroll" id="pageScroll">
+        <div id="mainView" class="main-view" aria-live="polite"></div>
+        <footer class="app-footer"><span>Made for meaningful beginnings.</span><span><a href="#privacy">Privacy first</a><i>·</i><a href="#help">Help & safety</a></span></footer>
+      </div>
+    </main>
+  </div>
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <div id="modalRoot"></div>
+</body>
+</html>

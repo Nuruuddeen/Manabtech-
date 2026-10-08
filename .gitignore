@@ -1,0 +1,7 @@
+# Private member uploads and generated runtime files must stay outside Git.
+/private-storage/*
+!/private-storage/.gitkeep
+/backend/.env
+.env
+*.log
+.DS_Store
